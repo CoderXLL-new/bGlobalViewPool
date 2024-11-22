@@ -6,7 +6,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "byte_global_viewpool": "file:../byte_global_viewpool"
+    "@bytedance/byte_global_viewpool": "file:../byte_global_viewpool"
   }
 }
 

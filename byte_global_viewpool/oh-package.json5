@@ -1,9 +1,9 @@
 {
-  "name": "byte_global_viewpool",
+  "name": "@bytedance/byte_global_viewpool",
   "version": "1.0.0",
   "description": "Please describe the basic information.",
   "main": "Index.ets",
-  "author": "",
+  "author": {"name": "wuqizhao" , "email": "wuqizhao@bytedance.com" },
   "license": "Apache-2.0",
   "dependencies": {}
 }
