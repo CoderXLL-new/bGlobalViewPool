@@ -1,0 +1,19 @@
+启动APP，进入Index页面
+ContentSliceTAG aboutToAppear 我不是复用池Text // 非复用池组件走正常生命周期
+ContentSliceTAG aboutToAppear 我是复用池Text // 复用池组件，由于没有预创建的组件进入池子，因此走正常的生命周期
+// 预创建4个ContentSlice组件，生命周期先创建再回收，符合预期
+ContentSliceTAG aboutToAppear 预创建组件
+ContentSliceTAG aboutToRecycle 预创建组件
+ContentSliceTAG aboutToAppear 预创建组件
+ContentSliceTAG aboutToRecycle 预创建组件
+ContentSliceTAG aboutToAppear 预创建组件
+ContentSliceTAG aboutToRecycle 预创建组件
+ContentSliceTAG aboutToAppear 预创建组件
+ContentSliceTAG aboutToRecycle 预创建组件
+
+跳转进入Index1页面
+ContentSliceTAG aboutToAppear 我不是复用池Text // 非复用池组件走正常生命周期
+ContentSliceTAG aboutToReuse 我是复用池Text // 复用池组件，复用池有缓存直接走aboutToReuse，不需要走重新创建
+
+返回Index页面
+ContentSliceTAG aboutToRecycle 我是复用池Text // 复用池组件回收到复用池

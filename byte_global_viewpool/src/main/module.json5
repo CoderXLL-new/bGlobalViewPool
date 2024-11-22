@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "byte_global_viewpool",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}
